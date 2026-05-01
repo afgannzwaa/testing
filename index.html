@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Buka YouTube & Facebook</title>
+</head>
+<body>
+
+    <!-- Tombol untuk memicu fungsi -->
+    <button onclick="gasBuka()">Buka Web</button>
+
+    <script>
+        function gasBuka() {
+            // Langsung buka YouTube
+            window.open("https://www.youtube.com", "_blank");
+
+            // Tunggu 2 detik (2000ms) baru buka Facebook
+            setTimeout(function() {
+                window.open("https://www.facebook.com", "_blank");
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
